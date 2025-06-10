@@ -1,9 +1,7 @@
 import streamlit as st
 import fitz  # PyMuPDF for PDF text extraction
 import openai
-import os
 
-# Load API key securely from Streamlit secrets
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 def extract_text_from_pdf(uploaded_file):
